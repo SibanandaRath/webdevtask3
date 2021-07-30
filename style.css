@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;        
+}
+
+body{
+        font-family: 'Poppins', sans-serif; 
+     }
+     
+input{
+    outline: none;
+    border: none;
+}
+.heading{
+    width: auto;
+}
+.usericon{
+    width: 100px;
+   
+}
+.heading h1{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.container{
+    display: flex;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 90vh;
+    background-color: #ffffff;
+    box-shadow: 5px 10px 38px rgba(0,0,0,0.2);
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;  
+}
+
+.image{
+    width: 55%;
+    }
+.image h1{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    top: 50%;
+    transform: translate(15%,0%);
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+     clip-path: circle(70.7% at 22% 50%);
+      /* filter: grayscale(23%); */
+     /* filter: blur(2.2px);  */ 
+}
+.wrap{
+    width: 80%;
+    position: relative;
+    border-bottom: 2px solid #998989;
+    margin-bottom: 13px;
+}
+
+.label{
+    font-size: 0.8rem;
+    color: #070711;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    min-height: 25px;
+    border-bottom: none;
+    padding: 15px 0px;
+    margin-top: 10px;     
+}
+
+input{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    background: transparent;
+    color: #0f0f0f;
+    font-weight: 500;
+    padding: 2px 0px;
+    
+}
+
+.btn{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    outline: none;
+    font-size: 1.3rem;
+    border: none;
+    background: #d5ddec;
+    color: rgb(3, 2, 2);
+    /* border: 1.5px solid #000000; */
+    position: relative;
+    z-index: 1;
+    transition: ease-out 0.3s;
+}
+
+.btn:hover{
+color: rgb(240, 232, 232);
+cursor: pointer;
+
+}
+.btn::before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #ee7749;
+    border-radius: 40px;
+    
+}
+.btn:hover:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+@media(max-width:1250px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media(max-width:1000px){
+    .container{
+        width: 100%;
+        height: 100vh !important;
+        position: static;
+        transform: translate(0,0);
+        /* background: linear-gradient(180deg, rgb(59, 28, 28) 0%, rgb(100, 83, 60) 100%); */
+        background-image: radial-gradient(circle at center center, rgba(217, 217, 217,0.05) 0%, rgba(217, 217, 217,0.05) 15%,rgba(197, 197, 197,0.05) 15%, rgba(197, 197, 197,0.05) 34%,rgba(178, 178, 178,0.05) 34%, rgba(178, 178, 178,0.05) 51%,rgba(237, 237, 237,0.05) 51%, rgba(237, 237, 237,0.05) 75%,rgba(138, 138, 138,0.05) 75%, rgba(138, 138, 138,0.05) 89%,rgba(158, 158, 158,0.05) 89%, rgba(158, 158, 158,0.05) 100%),radial-gradient(circle at center center, rgb(255,255,255) 0%, rgb(255,255,255) 6%,rgb(255,255,255) 6%, rgb(255,255,255) 12%,rgb(255,255,255) 12%, rgb(255,255,255) 31%,rgb(255,255,255) 31%, rgb(255,255,255) 92%,rgb(255,255,255) 92%, rgb(255,255,255) 97%,rgb(255,255,255) 97%, rgb(255,255,255) 100%); background-size: 42px 42px;
+    
+    }
+    
+    .form{
+      margin-left: auto;
+      margin-right: auto;
+      
+      
+    }
+    
+}
+@media(max-width:1000px){
+    .image{
+        display: none;
+    }
+    
+}
+@media(max-width:1059px){
+.img{
+    clip-path: none;
+    }
+    
+}
+.container1{
+    width: 100vw;
+    height: 100vh;
+    /* background: linear-gradient(180deg, rgb(59, 28, 28) 0%, rgb(100, 83, 60) 100%); */
+/* background-image: url(firewatch-digital-art-birds-forest-wallpaper-preview.jpg);
+background-repeat: no-repeat;
+box-sizing: border-box;
+background-size: 100%; */
+
+background-image: radial-gradient(circle at center center, rgba(217, 217, 217,0.05) 0%, rgba(217, 217, 217,0.05) 15%,rgba(197, 197, 197,0.05) 15%, rgba(197, 197, 197,0.05) 34%,rgba(178, 178, 178,0.05) 34%, rgba(178, 178, 178,0.05) 51%,rgba(237, 237, 237,0.05) 51%, rgba(237, 237, 237,0.05) 75%,rgba(138, 138, 138,0.05) 75%, rgba(138, 138, 138,0.05) 89%,rgba(158, 158, 158,0.05) 89%, rgba(158, 158, 158,0.05) 100%),radial-gradient(circle at center center, rgb(255,255,255) 0%, rgb(255,255,255) 6%,rgb(255,255,255) 6%, rgb(255,255,255) 12%,rgb(255,255,255) 12%, rgb(255,255,255) 31%,rgb(255,255,255) 31%, rgb(255,255,255) 92%,rgb(255,255,255) 92%, rgb(255,255,255) 97%,rgb(255,255,255) 97%, rgb(255,255,255) 100%); background-size: 42px 42px;
+}
+
+.textf p{
+    color: rgb(8, 6, 6);
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.textf p a{
+    text-decoration: none;
+    color: #dd2228;
+}
+
+input::-webkit-input-placeholder{
+font-family: 'Material Icons';
+}
+
+
+/* <!------------------ Registration ---------------------!> */
+
+.image2{
+    width: 55%;
+    
+}
+
+
+
+
+@media(max-width:1000px){
+    .image2{
+        display: none;
+    }
+    
+}
+@media(max-width:1059px){
+.img2{
+    clip-path: none;
+    }
+    
+}
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;        
+    
+}
+
+body{
+    
+    font-family: 'Mulish', sans-serif;
+      
+     }
+
+     
+input{
+    outline: none;
+    border: none;
+}
+.heading2{
+    width: auto;
+}
+.usericon2{
+    width: 70px;
+   padding-top: 5px;
+}
+.heading2 h1{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.container2{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 90vh;
+    background-color: #ffffff;
+    display: flex;
+    box-shadow: 5px 10px 38px rgba(0,0,0,0.2);
+}
+.form2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    
+}
+
+
+.image2 h1{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    top: 50%;
+    transform: translate(15%,0%);
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.img2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    clip-path: circle(70.7% at 80% 50%);
+
+      /* filter: grayscale(23%); */
+     /* filter: blur(2.2px);  */
+     
+}
+
+
+.wrap2{
+    width: 80%;
+    position: relative;
+    border-bottom: 2px solid #998989;
+    margin-bottom: 13px;
+    padding-top: 10px;
+}
+
+input{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    background: transparent;
+    color: #0f0f0f;
+    font-weight: 500;
+    padding: 2px 0px;
+    
+}
+
+.btn2{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    outline: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: none;
+    background: #d5ddec;
+    color: rgb(3, 2, 2);
+    /* border: 1.5px solid #000000; */
+    position: relative;
+    z-index: 1;
+    transition: ease-out 0.3s;
+    
+}
+
+.btn2:hover{
+color: rgb(240, 232, 232);
+cursor: pointer;
+}
+.btn2::before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #ee7749;
+    border-radius: 40px;
+    
+}
+.btn2:hover:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+@media(max-width:1250px){
+    .container2{
+        width: 90%;
+    }
+}
+
+@media(max-width:1000px){
+    .container2{
+        width: 100%;
+        height: 100vh !important;
+        position: static;
+        transform: translate(0,0);
+        /* background: linear-gradient(180deg, rgb(59, 28, 28) 0%, rgb(100, 83, 60) 100%); */
+        background-image: radial-gradient(circle at center center, rgba(217, 217, 217,0.05) 0%, rgba(217, 217, 217,0.05) 15%,rgba(197, 197, 197,0.05) 15%, rgba(197, 197, 197,0.05) 34%,rgba(178, 178, 178,0.05) 34%, rgba(178, 178, 178,0.05) 51%,rgba(237, 237, 237,0.05) 51%, rgba(237, 237, 237,0.05) 75%,rgba(138, 138, 138,0.05) 75%, rgba(138, 138, 138,0.05) 89%,rgba(158, 158, 158,0.05) 89%, rgba(158, 158, 158,0.05) 100%),radial-gradient(circle at center center, rgb(255,255,255) 0%, rgb(255,255,255) 6%,rgb(255,255,255) 6%, rgb(255,255,255) 12%,rgb(255,255,255) 12%, rgb(255,255,255) 31%,rgb(255,255,255) 31%, rgb(255,255,255) 92%,rgb(255,255,255) 92%, rgb(255,255,255) 97%,rgb(255,255,255) 97%, rgb(255,255,255) 100%); background-size: 42px 42px;
+    
+    }
+    
+    .form2{
+      margin-left: auto;
+      margin-right: auto;
+      
+      
+    }
+    
+}
+
+.container1of2{
+    width: 100vw;
+    height: 100vh;
+    /* background: linear-gradient(180deg, rgb(59, 28, 28) 0%, rgb(100, 83, 60) 100%); */
+/* background-image: url(firewatch-digital-art-birds-forest-wallpaper-preview.jpg);
+background-repeat: no-repeat;
+box-sizing: border-box;
+background-size: 100%; */
+
+background-image: radial-gradient(circle at center center, rgba(217, 217, 217,0.05) 0%, rgba(217, 217, 217,0.05) 15%,rgba(197, 197, 197,0.05) 15%, rgba(197, 197, 197,0.05) 34%,rgba(178, 178, 178,0.05) 34%, rgba(178, 178, 178,0.05) 51%,rgba(237, 237, 237,0.05) 51%, rgba(237, 237, 237,0.05) 75%,rgba(138, 138, 138,0.05) 75%, rgba(138, 138, 138,0.05) 89%,rgba(158, 158, 158,0.05) 89%, rgba(158, 158, 158,0.05) 100%),radial-gradient(circle at center center, rgb(255,255,255) 0%, rgb(255,255,255) 6%,rgb(255,255,255) 6%, rgb(255,255,255) 12%,rgb(255,255,255) 12%, rgb(255,255,255) 31%,rgb(255,255,255) 31%, rgb(255,255,255) 92%,rgb(255,255,255) 92%, rgb(255,255,255) 97%,rgb(255,255,255) 97%, rgb(255,255,255) 100%); background-size: 42px 42px;
+}
+
+.textf2 p{
+    color: rgb(8, 6, 6);
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.textf2 p a{
+    text-decoration: none;
+    color: #dd2228;
+}
+
+

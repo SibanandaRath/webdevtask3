@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;        
+    }
+    
+    body{
+        font-family: 'Poppins', sans-serif; 
+     }
+
+   .header{
+       padding-right: 2rem;
+       /* width: 100vw;
+       height: 50px;
+       background-color: rgba(0, 0,0, 0.3); */
+   }
+    .container{
+       width: 100vw;
+       height: 100vh;
+       background-image: linear-gradient(45deg, rgba(254, 246, 210, 0.53) 0%, rgba(254, 246, 210, 0.53) 14.286%,rgba(221, 240, 216, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 28.572%,rgba(188, 233, 223, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 42.858%,rgba(156, 227, 229, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 57.144%,rgba(123, 220, 235, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 71.42999999999999%,rgba(90, 214, 242, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 85.71600000000001%,rgba(57, 207, 248, 0.53) 85.716%, rgba(57, 207, 248, 0.53) 100.002%),linear-gradient(135deg, rgb(246, 99, 200) 0%, rgb(246, 99, 200) 12.5%,rgb(223, 98, 196) 12.5%, rgb(223, 98, 196) 25%,rgb(199, 97, 192) 25%, rgb(199, 97, 192) 37.5%,rgb(176, 96, 188) 37.5%, rgb(176, 96, 188) 50%,rgb(152, 95, 184) 50%, rgb(152, 95, 184) 62.5%,rgb(129, 94, 180) 62.5%, rgb(129, 94, 180) 75%,rgb(105, 93, 176) 75%, rgb(105, 93, 176) 87.5%,rgb(82, 92, 172) 87.5%, rgb(82, 92, 172) 100%);
+   
+    }
+    .btn{
+        margin-top: 20px;
+        width: 150px;
+        height: 40px;
+        border-radius: 40px;
+        outline: none;
+        font-weight: bold;
+        font-size: 1rem;
+        border: none;
+        background: #dae9fc;
+        color: rgb(3, 2, 2);
+        /* border: 1.5px solid #000000; */
+        position: relative;
+        z-index: 1;
+        transition: ease-out 0.3s;
+        float: right;
+        
+    }
+    
+    .btn:hover{
+    color: rgb(240, 232, 232);
+    cursor: pointer;
+    }
+    .btn::before{
+        transition: 0.5s all ease;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        opacity: 0;
+        content: "";
+        background-color: #862e70;
+        border-radius: 40px;
+        
+    }
+    .btn:hover:before{
+        transition: 0.5s all ease;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        z-index: -1;
+    }
+
+    /* card */
+    .card{
+        background-color: #f4f3f3;
+        width: 350px;
+        /* height: 20rem; */
+        height: auto;
+        text-align: center;
+        /* margin: auto; */
+        border-radius: 10px;
+        position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 5px 10px 38px rgba(0,0,0,0.2);
+    
+       }
+       
+       .card-background{
+        background-image:radial-gradient(circle at 79% 30%, rgba(230, 230, 230,0.04) 0%, rgba(230, 230, 230,0.04) 50%,rgba(12, 12, 12,0.04) 50%, rgba(12, 12, 12,0.04) 100%),radial-gradient(circle at 53% 89%, rgba(210, 210, 210,0.04) 0%, rgba(210, 210, 210,0.04) 50%,rgba(24, 24, 24,0.04) 50%, rgba(24, 24, 24,0.04) 100%),radial-gradient(circle at 92% 89%, rgba(17, 17, 17,0.04) 0%, rgba(17, 17, 17,0.04) 50%,rgba(205, 205, 205,0.04) 50%, rgba(205, 205, 205,0.04) 100%),radial-gradient(circle at 21% 13%, rgba(124, 124, 124,0.04) 0%, rgba(124, 124, 124,0.04) 50%,rgba(243, 243, 243,0.04) 50%, rgba(243, 243, 243,0.04) 100%),radial-gradient(circle at 77% 0%, rgba(16, 16, 16,0.04) 0%, rgba(16, 16, 16,0.04) 50%,rgba(130, 130, 130,0.04) 50%, rgba(130, 130, 130,0.04) 100%),linear-gradient(90deg, rgb(247, 101, 31),rgb(249, 105, 208));   
+        height: 160px;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+       }
+       
+       .card-image{
+        border-radius: 50%;
+        width: 120px;
+        height: auto;
+        position: relative;
+        top: 30px;
+        border: 6px solid #882828;
+       }
+       
+       .card-info{
+        /* margin-top: 80px; */
+        line-height: 2rem;
+        padding: 10px;
+        font-size: 1.5rem; 
+       }
+       
+       
+       
+       h1{
+        color: #009688; 
+       }
+       
+       p{
+        color: rgb(53, 36, 36);
+        text-align: left;
+        padding-left: 1rem;
+        font-size: 1.3rem;
+    
+       }
+
+       @media(max-width:720px){
+       .card{
+           width: 100%;
+           height: 100%; 
+           border: none;
+           border-radius: 0px;
+
+        }
+
+        .card-background{
+            background-image: radial-gradient(circle at 79% 30%, rgba(230, 230, 230,0.04) 0%, rgba(230, 230, 230,0.04) 50%,rgba(12, 12, 12,0.04) 50%, rgba(12, 12, 12,0.04) 100%),radial-gradient(circle at 53% 89%, rgba(210, 210, 210,0.04) 0%, rgba(210, 210, 210,0.04) 50%,rgba(24, 24, 24,0.04) 50%, rgba(24, 24, 24,0.04) 100%),radial-gradient(circle at 92% 89%, rgba(17, 17, 17,0.04) 0%, rgba(17, 17, 17,0.04) 50%,rgba(205, 205, 205,0.04) 50%, rgba(205, 205, 205,0.04) 100%),radial-gradient(circle at 21% 13%, rgba(124, 124, 124,0.04) 0%, rgba(124, 124, 124,0.04) 50%,rgba(243, 243, 243,0.04) 50%, rgba(243, 243, 243,0.04) 100%),radial-gradient(circle at 77% 0%, rgba(16, 16, 16,0.04) 0%, rgba(16, 16, 16,0.04) 50%,rgba(130, 130, 130,0.04) 50%, rgba(130, 130, 130,0.04) 100%),linear-gradient(90deg, rgb(247, 101, 31),rgb(249, 105, 208));   
+            height: 16rem;
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+           }
+           .card-image{
+            border-radius: 50%;
+            width: 120px;
+            height: auto;
+            position: relative;
+           top: 4rem;
+            border: 6px solid #882828;
+           }
+           .btn{
+               width: 6rem;
+               height: 2rem;
+           }
+       }
